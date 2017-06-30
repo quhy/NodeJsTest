@@ -2,7 +2,7 @@
  * Created by tongwii on 2017/6/29.
  */
 var http = require('http');
-var cheerio = require('C:/Program Files/nodejs/node_modules/cheerio/lib/cheerio');
+var cheerio = require('cheerio');
 var url ='http://www.imooc.com/learn/348';
 
 function filterChapters(html) {
@@ -36,7 +36,6 @@ function filterChapters(html) {
                 id:id
             })
         });
-        console.log(chapterData+"data1");
         courseData.push(chapterData);
     });
 
